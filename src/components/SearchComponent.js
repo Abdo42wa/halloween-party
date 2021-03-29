@@ -1,10 +1,16 @@
 import React from 'react'
 
-const SearchComponent = () => {
+const SearchComponent = ({placeholder,handelChange,search}) => {
     return (
         <div>
-            Search
-        </div>
+            <input 
+            className='search' 
+            type='search' 
+            placeholder={placeholder} 
+            onChange = {handelChange}
+            value={search}
+            />
+    </div>
     )
 }
 
